@@ -1,0 +1,19 @@
+git config --global user.name "j2eework"
+git config --global user.email "jiahan1024@163.com"
+git config --global push.default current
+
+
+ssh-keygen -t dsa
+
+git clone https://github.com/j2eework/PyPay.git
+
+
+git remote rm origin
+git remote add origin git@github.com:j2eework/PyPay.git
+
+
+git pull origin master
+git rm -r --cached .idea
+git commit -m 'del'
+git push -u origin master
+
